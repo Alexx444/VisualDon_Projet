@@ -1,0 +1,146 @@
+body {
+  background-image: url("/src/img/go.png");
+  background-size: 100%;
+  overflow-X: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 98.5vh;
+}
+
+main {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+main section {
+  flex-direction: column;
+
+  display: none;
+  margin: auto;
+  max-width: 1200px;
+}
+
+main section.active {
+  display: flex;
+}
+
+h2 {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-top: 1em;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -9em;
+  gap: 30px;
+}
+
+#map {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+#price {
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4em;
+}
+
+#cagnote {
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-size: 1.4em;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+}
+
+#money {
+  padding: 0.5em;
+}
+
+#dollar {
+  padding: 0.5em;
+}
+
+.p {
+  font-size: 1.1em;
+  padding: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+p {
+  font-family: "Comfortaa", cursive;
+  line-height: 2;
+  padding-right: 3em;
+}
+
+img {
+  
+  transform: scale(0.8);
+}
+
+footer {
+  flex-shrink: 0;
+
+  height: 50px;
+  background: var(--secondary-color);
+  border-top: 1px solid var(--border-color);
+}
+
+footer nav {
+  height: 100%;
+  display: flex;
+}
+
+footer nav a {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  text-align: center;
+  text-decoration: none;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.5em;
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  background-color: var(--grey-light);
+}
+
+footer nav a.active *,
+footer nav a:hover * {
+  color: var(--primary-color);
+}
+
+.fresh {
+  font-family: "Comfortaa", cursive;
+  width: 170px;
+  height: 40px;
+  font-size: 1em;
+  padding: 10px 10px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(190, 186, 186);
+  border-radius: 50px;
+}
+

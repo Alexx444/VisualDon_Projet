@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Carte de l'Europe</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="src/css/index.css" />
+  </head>
+  <body>
+    <main>
+      <section id="home-section" class="active">
+        <h2>
+          Voyage à travers les captitales européenes et découvre le coût de la
+          vie <br />
+          de ces dérnieres grâce à une exploration ludique
+        </h2>
+        <div class="p">
+          <p>
+            Déroulé de cette exploration : <br />
+            - Vous avez une cagnot de 80 $ <br />
+            - Vous devez cliquez sur les capitales pour vous déplacer <br />
+            - Vous devez manger un repas par capital <br />
+            - Le prix moyen d’un repas dans cette capital sera déduit de votre
+            cagnote <br />
+            - Si votre personage devient vert le coût de la vie (en fontion d'un
+            repas) de cette capital est en dessous de la moyenne européene
+            <br />
+            - Si votre personage devient rouge le coût de la vie de cette
+            capital (en fontion d'un repas) est en dessus de la moyenne
+            européene <br />
+            - Si votre cagnote est en négatif, vous ne pouvez plus voyager<br />
+            - Clique sur Map pour commencer
+          </p>
+          <img src="/src/img/personage1.webp" alt="personage de décoration" />
+        </div>
+      </section>
+      <section id="map-section">
+        <div id="map">
+        <div class="container">
+          <div id="price"></div>
+          <div id="perso">
+            <img src="/src/img/personage1.webp" alt="personage de décoration" />
+          </div>
+          <div id="cagnote">
+            <div id="money">80</div>
+            <div id="dollar">$</div>
+          </div>
+          <div id="bouton"></div>
+        </div>
+        <div >
+          <div id="map-contains"></div>
+        </div>
+      </div>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="main.js"></script>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <a href="#home" class="active">
+          <span>Home</span>
+        </a>
+        <a href="#map">
+          <span>Map</span>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
